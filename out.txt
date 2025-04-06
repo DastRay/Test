@@ -1,0 +1,36 @@
+
+   comment Полный тестовый пример для языка LXLVI;
+
+   declare a int, b multiset, c int;
+   let a = 10;
+   let b = {2 3 3 4};
+   let c = a + 5;
+
+   for each i in b;
+       write i;
+       let a = a - 1;
+   end;
+
+   switch ( a )
+       when 14: write a;
+       otherwise: write b;
+   end;
+
+   UNIFICATION b b;
+   INTERSECTION b b;
+   DIFFERENCE b b;
+   SYMMETRICDIFF b b;
+   ACCESS b a;
+   CAPACITY b;
+   COMPARISON a b;
+   ADDENDUM b a;
+
+   <<MainLoop>>
+   goto MainLoop;
+   let x = 5;    comment оператор присваивания: let V = E;
+   a < 100;
+   b >= 50;
+   a != 0;
+   a == 10;
+   ====
+   end;
